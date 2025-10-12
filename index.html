@@ -1,75 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZSR Airlines - Ida e Volta</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSR Airlines - Ida e Volta</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="topo">
-    <div class="logo">Z<span>·S·R</span></div>
-    <nav>
-      <a href="#">Descubra</a>
-      <a href="#">Reservar</a>
-      <a href="#">Viagens</a>
-      <a href="#">PlatinumClub</a>
-      <a href="#">Funcionários</a>
-      <a href="#">Aeroportos</a>
-      <a href="#">Ajuda</a>
-      <a href="#">Acessar</a>
-    </nav>
-  </header>
+    <header class="topo">
+        <div class="logo">Z<span>·S·R</span></div>
+        <nav>
+            <a href="#">Descubra</a>
+            <a href="#">Reservar</a>
+            <a href="#">Viagens</a>
+            <a href="#">PlatinumClub</a>
+            <a href="#">Funcionários</a>
+            <a href="#">Aeroportos</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Acessar</a>
+        </nav>
+    </header>
 
-  <section class="banner">
-    
-    <div class="formulario">
-      <div class="abas">
-        <a href="index.html" class="ativa">Ida e Volta</a>
-        <a href="so-ida.html">Só Ida</a>
-        <a href="multidestino.html">Multidestino</a>
-      </div>
+    <section class="banner">
 
-      <form>
-        <div class="linha">
-          <div class="campo">
-            <label>Origem</label>
-            <input type="text" placeholder="Insira sua cidade de origem">
-          </div>
-          <div class="campo">
-            <label>Destino</label>
-            <input type="text" placeholder="Insira sua cidade de destino">
-          </div>
-          <div class="campo pequeno">
-            <label>Passagens / Classe</label>
-            <select>
-              <option>1 passageiro, Econômica</option>
-              <option>2 passageiros, Econômica</option>
-              <option>Executiva</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="linha">
-          <div class="campo">
-            <label>Datas</label>
-            <div class="datas">
-              <input type="date">
-              <input type="date">
+        <div class="formulario">
+            <div class="abas">
+                <a href="index.html" class="ativa">Ida e Volta</a>
+                <a href="so-ida.html">Só Ida</a>
+                <a href="multidestino.html">Multidestino</a>
             </div>
-          </div>
-        </div>
 
-        <div class="botoes">
-          <button type="button" class="btn secundario">Mapa assentos</button>
-          <button type="button" class="btn secundario">Pagamento</button>
-          <button type="submit" class="btn buscar">Buscar</button>
-          <button type="button" class="btn secundario">Mostrar voos</button>
+            <form>
+                <div class="linha">
+                    <div class="campo">
+                        <label>Origem</label>
+                        <input list="lista-origem" id="origem" placeholder="Escolha o local de origem ou o aeroporto">
+                        <datalist id="lista-origem">
+                            <option value="Cabo Frio - CFB">
+                            <option value="Cacoal - OAL">
+                            <option value="Caldas Novas - CLV">
+                            <option value="Campina Grande - CPV">
+                            <option value="Campo Grande - CPV">
+                            <option value="Campos dos Goitacazes - CAW">
+                            <option value="Canoas - QNS">
+                            <option value="Caruaru - CAU">
+                            <option value="Cascavel - CAC">
+                            <option value="Caxias do Sul - Gramado e Canela - CXJ">
+                            <option value="Macapá - MCP">
+                            <option value="Maceió - MCZ">
+                            <option value="Manaus - MAQ">
+                            <option value="Marabá - MAB">
+                            <option value="Maringá - MGF">
+                            <option value="Marília - MII">
+                            <option value="Montes Claros - MOC">
+                            <option value="Morro de São Paulo - MXQ">
+                            <option value="Mossoró - MVF">
+                            <option value="Macugê - CHD">
+                            <option value="Santo Ângelo - GEL">
+                            <option value="Sinop - OPS">
+                            <option value="Sorriso - SMT">
+                            <option value="São Gabriel da Cachoeira - SJL">
+                            <option value="São José do Rio Preto - Olímpia - SJP">
+                            <option value="São Luís - SLZ">
+                            <option value="São Paulo - Campinas - Viracopos - VCP">
+                            <option value="São Paulo - Congonhas - CGH">
+                            <option value="São Paulo - Guarulhos - GRU">
+                            <option value="São Paulo - São José dos Campos - SJK">
+                            <option value="Alta Floresta - AFL">
+                            <option value="Altamira - ATM">
+                            <option value="Araçatuba - ARU">
+                            <option value="Araguaína - AUX">
+                            <option value="Araxá - AAX">
+                            <option value="Barreiras - BRA">
+                            <option value="Barretos - BAT">
+                            <option value="Bauru - Arealva - JTC">
+                            <option value="Belém - BEL">
+                            <option value="Belo Horizonte - Confins - CNF">
+                            <option value="Boa Vista - BVB">
+                            <option value="Boipeba - PBA">
+                            <option value="João Pessoa - JPA">
+                            <option value="Recife - REC">
+                            <option value="Rio de Janeiro - Santos Dumont - SDU">
+                        </datalist>
+                    </div>
+                    <div class="campo">
+                        <label>Destino</label>
+                        
+                        <input list="lista-destino" id="destino" placeholder="Escolha seu destino ou o aeroporto">
+                        <datalist id="lista-destino">
+                            <option value="Cabo Frio - CFB">
+                            <option value="Cacoal - OAL">
+                            <option value="Caldas Novas - CLV">
+                            <option value="Campina Grande - CPV">
+                            <option value="Campo Grande - CPV">
+                            <option value="Campos dos Goitacazes - CAW">
+                            <option value="Canoas - QNS">
+                            <option value="Caruaru - CAU">
+                            <option value="Cascavel - CAC">
+                            <option value="Caxias do Sul - Gramado e Canela - CXJ">
+                            <option value="Macapá - MCP">
+                            <option value="Maceió - MCZ">
+                            <option value="Manaus - MAQ">
+                            <option value="Marabá - MAB">
+                            <option value="Maringá - MGF">
+                            <option value="Marília - MII">
+                            <option value="Montes Claros - MOC">
+                            <option value="Morro de São Paulo - MXQ">
+                            <option value="Mossoró - MVF">
+                            <option value="Macugê - CHD">
+                            <option value="Santo Ângelo - GEL">
+                            <option value="Sinop - OPS">
+                            <option value="Sorriso - SMT">
+                            <option value="São Gabriel da Cachoeira - SJL">
+                            <option value="São José do Rio Preto - Olímpia - SJP">
+                            <option value="São Luís - SLZ">
+                            <option value="São Paulo - Campinas - Viracopos - VCP">
+                            <option value="São Paulo - Congonhas - CGH">
+                            <option value="São Paulo - Guarulhos - GRU">
+                            <option value="São Paulo - São José dos Campos - SJK">
+                            <option value="Alta Floresta - AFL">
+                            <option value="Altamira - ATM">
+                            <option value="Araçatuba - ARU">
+                            <option value="Araguaína - AUX">
+                            <option value="Araxá - AAX">
+                            <option value="Barreiras - BRA">
+                            <option value="Barretos - BAT">
+                            <option value="Bauru - Arealva - JTC">
+                            <option value="Belém - BEL">
+                            <option value="Belo Horizonte - Confins - CNF">
+                            <option value="Boa Vista - BVB">
+                            <option value="Boipeba - PBA">
+                            <option value="João Pessoa - JPA">
+                            <option value="Recife - REC">
+                            <option value="Rio de Janeiro - Santos Dumont - SDU">
+                        </datalist>
+                    </div>
+                    <div class="campo pequeno">
+                        <label>Passagens / Classe</label>
+                        <select>
+                            <option>1 passageiro, Econômica</option>
+                            <option>2 passageiros, Econômica</option>
+                            <option>Executiva</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Datas</label>
+                        <div class="datas">
+                            <input type="date">
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button type="button" class="btn secundario">Mapa assentos</button>
+                    <button type="button" class="btn secundario">Pagamento</button>
+                    <button type="submit" class="btn buscar">Buscar</button>
+                    <button type="button" class="btn secundario">Mostrar voos</button>
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
-  </section>
+    </section>
 
 </body>
+
 </html>
