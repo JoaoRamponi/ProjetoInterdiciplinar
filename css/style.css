@@ -162,3 +162,23 @@ form {
 .btn:hover {
     opacity: 0.9;
 }
+
+select {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+select:hover {
+    border: 2px solid #a14f8a;
+}
+
+select:focus {
+    border: 2px solid #7d3169;
+}
