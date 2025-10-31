@@ -1,0 +1,152 @@
+/* Tela de clubes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.club-container {
+  width: 100%;
+  max-width: 1500px;
+  background-color: #A76F93;
+  padding: 60px;
+  display: flex;
+  gap: 50px;
+  border-radius: 30px;
+  align-items: stretch;
+}
+
+.left-card {
+  flex: 2;
+  background-color: #B485A7;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.left-card h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.left-card p {
+  font-size: 30px;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.left-card .link {
+  font-size: 30px;
+  color: #175fe8;
+  text-decoration: none;
+}
+
+.cards-right {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.club-card {
+  background-color: #8D5282;
+  width: 200px;
+  height: 550px;
+  border-radius: 30px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.club-box {
+    width: 100%;
+    max-width: 1400px;
+    background: #A76F93;
+    border-radius: 30px;
+    padding: 60px;
+    position: relative;
+}
+
+.club-title {
+    position: absolute;
+    top: -25px;
+    left: 60px;
+    background: #5A0C35;
+    color: #fff;
+    font-size: 45px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.club-content {
+    background: #B485A7;
+    padding: 80px 60px;
+    border-radius: 25px;
+}
+
+.club-content h1 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.club-content h1 strong {
+    font-weight: bold;
+}
+
+.club-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    color: #000;
+}
+
+.btn-assinar {
+    background: #5A0C35;
+    border: none;
+    color: white;
+    font-size: 28px;
+    padding: 20px 80px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.btn-assinar:hover {
+    transform: scale(1.05);
+}
