@@ -18,13 +18,10 @@ body {
 }
 
 .logo {
-  height: 50;
-  width: 50;
+  background-image: url("../imagens/logo.png");
+  width: 100px;
+  height: 50px;
   display: block;
-}
-
-.logo span {
-  color: #7d3169;
 }
 
 nav a {
@@ -37,7 +34,6 @@ nav a {
 nav a:hover {
   color: #640f4f;
 }
-
 
 .aviao-topo {
   position: relative;
@@ -178,7 +174,6 @@ select:focus {
   border: 2px solid #7d3169;
 }
 
-/* Destinos */
 .destinos {
   background-color: #f5f5f5;
   padding: 50px 80px;
