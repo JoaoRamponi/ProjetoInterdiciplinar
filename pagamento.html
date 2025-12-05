@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+        <div class="menu"><img src="imagens/formasPagamento.png"></div>
+    <br>
+    
+    <div class="opcao-pagamento">
+        <input class="radio-pagamento" type="radio" name="pagamento" id="p1">
+        <label class="content" for="p1">
+            <img src="imagens/formaPagamento1.png">
+    </div>
+
+    <div class="opcao-pagamento">
+        <input class="radio-pagamento" type="radio" name="pagamento" id="p2">
+        <label class="content" for="p2">
+            <div class="cicle"></div>
+            <img src="imagens/formaPagamento2.png">
+    </div>
+
+    <div class="opcao-pagamento">
+        <input class="radio-pagamento" type="radio" name="pagamento" id="p3">
+        <label class="content" for="p3">
+            <div class="circle"></div>
+            <img src="imagens/formaPagamento3.png">
+    </div>
+
+    <div class="opcao-pagamento">
+        <input class="radio-pagamento" type="radio" name="pagamento" id="p4">
+        <label class="content" for="p4">
+            <div class="circle"></div>
+            <img src="imagens/formaPagamento4.png">
+    </div>
+
+    <div class="opcao-pagamento">
+        <input class="radio-pagamento" type="radio" name="pagamento" id="p5">
+        <label class="content" for="p5">
+            <div class="circle"></div>
+            <img src="imagens/formaPagamento5.png">
+    </div>
+
+    <script>
+document.querySelectorAll('.radio-pagamento').forEach(radio => {
+    radio.addEventListener('change', function () {
+        setTimeout(() => {
+            window.location.href = "pagamentoCofirmado.html"; 
+        }, 5000);
+    });
+});
+</script>
+
+</html>
