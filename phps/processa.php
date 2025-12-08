@@ -1,5 +1,4 @@
 <?php
-// CONFIGURAÇÃO DO BANCO
 $servername = "localhost";
 $username   = "root";
 $password   = "";
