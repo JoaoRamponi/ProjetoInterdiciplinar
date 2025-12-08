@@ -15,17 +15,14 @@
       <h1 style="color: #fff;">Nunca perca uma oferta</h1>
       <p>Inscreva-se e seja o primeiro a receber nossas ofertas exclusivas.</p>
 
+    <form action="phps/cadastro_telaFinal.php" method="POST">
       <div class="input-row">
-        <input type="email" placeholder="Endereço de e-mail" />
-        <input type="text" placeholder="Cidade preferida de partida" />
+        <input type="email" placeholder="Endereço de e-mail"  name="email" required/>
+        <input type="text" placeholder="Cidade preferida de partida"  name="cidade" required/>
+
+        <button type="submit">Inscrever</button>
       </div>
-
-      <label class="checkbox">
-        <input type="checkbox" />
-        Quero receber ofertas e notícias da ZSR PlatinumWings. Li e entendi o <a href="#">aviso de privacidade</a>.
-      </label>
-
-      <button class="btn" style="background-color: #640f4f; color: #fff;">Inscreva-se</button>
+    </form>
     </div>
   </div>
 

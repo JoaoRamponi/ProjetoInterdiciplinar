@@ -1,5 +1,4 @@
 <?php
-// Recebe os dados da página IDA
 $origem = $_POST['origem'] ?? '';
 $destino = $_POST['destino'] ?? '';
 $classe = $_POST['classe'] ?? '';

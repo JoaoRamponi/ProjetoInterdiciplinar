@@ -1,29 +1,34 @@
 <?php
-$con = new mysqli("localhost", "root", "", "projetopw2");
+// CONFIG DO BANCO
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "projetopw2";
+
+$con = new mysqli($servername, $username, $password, $dbname);
 
 if ($con->connect_error) {
-    die("Erro: " . $con->connect_error);
+    die("Erro na conexão: " . $con->connect_error);
 }
 
-$origem1 = $_POST['origem1_passagem'];
-$destino1 = $_POST['destino1_passagem'];
-$origem2 = $_POST['origem2_passagem'];
-$destino2 = $_POST['destino2_passagem'];
-$dataIda = $_POST['data_ida'];
-$classe = $_POST['passagem_classe'];
+$origem1  = $_POST['origem1'];
+$origem2  = $_POST['origem2'];
 
-$sql = "INSERT INTO passagem_multi 
-(origem1_passagem, destino1_passagem, origem2_passagem, destino2_passagem, data_ida, passagem_classe)
-VALUES (?, ?, ?, ?, ?, ?)";
+$destino1 = $_POST['destino1'];
+$destino2 = $_POST['destino2'];
 
-$stmt = $con->prepare($sql);
+$data_ida = $_POST['data_ida'];  
+$classe = $_POST['classe'];
 
-$stmt->bind_param("ssssss", $origem1, $destino1, $origem2, $destino2, $dataIda, $classe);
+$sql = "INSERT INTO passagem_multi (origem1_passagem,origem2_passagem,destino1_passagem,destino2_passagem,data_ida,passagem_classe) VALUES ('$origem1','$origem2','$destino1','$destino2','$data_ida','$classe')";
 
-if ($stmt->execute()) {
+if ($con->query($sql) === TRUE) {
     $id = $con->insert_id;
-    echo "<script>alert('Passagem cadastrada com sucesso!'); window.location='../resumoMulti.php?id=$id';</script>";
+    header("Location: resumoMulti.php?id=" . $id);
+    exit();
 } else {
-    echo "<script>alert('Erro ao cadastrar'); window.location='../index.html';</script>";
+    echo "Erro ao salvar: " . $con->error;
 }
+
+$con->close();
 ?>
