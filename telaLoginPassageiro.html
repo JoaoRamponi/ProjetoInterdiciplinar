@@ -13,57 +13,42 @@
     <div class="titulo-faixa">
         ACESSO LOGIN PASSAGEIRO
     </div>
-
-    <form>
+    <form action="phps/cadastro_passageiro.php" method="POST">
 
         <div class="linha">
             <label>Nome completo:</label>
-            <input type="text">
+            <input type="text" name="nome_passageiro">
         </div>
 
         <div class="linha-dupla">
-            <div>
-                <label>CPF:</label>
-                <input type="text">
-            </div>
             <div>
                 <label>RG:</label>
-                <input type="text">
-            </div>
-        </div>
+                <input type="text" name="rg_passageiro">
 
-        <div class="linha-dupla">
-            <div>
                 <label>Data nascimento:</label>
-                <input type="text" class="campo-data">
+                <input type="text" name="dataNasci_passageiro">
             </div>
-        </div>
-
-        <div class="linha">
-            <label>Endereço/rua/número:</label>
-            <input type="text">
         </div>
 
         <div class="linha-dupla">
             <div>
                 <label>Cidade/bairro:</label>
-                <input type="text">
+                <input type="text" name="cidade_passageiro">
             </div>
         </div>
 
         <div class="linha-dupla">
             <div>
                 <label>Telefone:</label>
-                <input type="text">
+                <input type="text" name="telefone_passageiro">
             </div>
             <div>
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" name="email_passageiro">
             </div>
         </div>
 
-        <button class="botao-cadastrar">CADASTRAR PASSAGEIRO</button>
-
+        <button class="botao-cadastrar">CADASTRAR PASSAGEIRO </button>
     </form>
 
 </div>

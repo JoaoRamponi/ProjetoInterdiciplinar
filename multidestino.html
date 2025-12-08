@@ -35,7 +35,7 @@
             <a href="multidestino.html" class="ativa">Multidestino</a>
         </div>
 
-        <form>
+        <form action="phps/cadastro_multidestino.php" method="POST">
 
             <label class="campo">Trecho 1</label>
             <div class="linha-index">
@@ -259,14 +259,20 @@
                 </div>
 
                 <div class="campo pequeno">
-                    <label>Data da Ida</label>
-                    <input type="text" name="data2" required>
-                </div>
+                <label>Passagens / Classe</label>
+                <select name="classe" required>
+                    <option>1 passageiro, Econômica</option>
+                    <option>2 passageiros, Econômica</option>
+                    <option>Executiva</option>
+                </select>
+            </div>
+
             </div>
 
             <div class="botoes">
-                <button type="submit" class="btn buscar">Buscar</button>
+                <button type="button" class="btn buscar" onclick="window.location.href='destinosNacionais.html'">Buscar</button>
                 <button type="button" class="btn secundario">Mostrar voos</button>
+                <button type="submit" class="btn buscar">Continuar</button>
             </div>
 
         </form>

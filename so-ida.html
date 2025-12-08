@@ -37,7 +37,7 @@
                 <a href="multidestino.html">Multidestino</a>
             </div>
 
-            <form>
+            <form action="phps/resumoIda.php" method="POST">
                 <div class="linha-index">
 
                     <div class="campo">
@@ -97,7 +97,7 @@
 
                         <div class="campo">
                             <label>DESTINO</label>
-                            <select name="origem" required>
+                            <select name="destino" required>
                                 <option selected disabled>Escolha o local de origem</option>
                                 <option value="Cabo Frio - CFB">Cabo Frio - CFB</option>
                                 <option value="Cacoal - OAL">Cacoal - OAL</option>
@@ -150,7 +150,7 @@
 
                     <div class="campo pequeno">
                         <label>Passagens / Classe</label>
-                        <select>
+                        <select name="classe" required>
                             <option>1 passageiro, Econômica</option>
                             <option>2 passageiros, Econômica</option>
                             <option>Executiva</option>
@@ -161,17 +161,15 @@
                 <div class="linha">
                     <div class="campo">
                         <label>Data da Ida</label>
-                        <input type="text">
+                        <input type="text" name="data_ida" required>
                     </div>
                 </div>
 
                 <div class="botoes">
-                    <button type="button" class="btn secundario"
-                        onclick="window.location.href='listaAssentos.html'">Mapa assentos</button>
-                    <button type="button" class="btn secundario"
-                        onclick="window.location.href='pagamento.html'">Pagamento</button>
-                    <button type="submit" class="btn buscar"
-                        onclick="window.location.href='destinosNacionais.html'">Buscar</button>
+                    <button type="button" class="btn secundario"onclick="window.location.href='listaAssentos.html'">Mapa assentos</button>
+                    <button type="button" class="btn secundario"onclick="window.location.href='pagamento.html'">Pagamento</button>
+                    <button type="button" class="btn buscar" onclick="window.location.href='destinosNacionais.html'">Buscar</button>
+                    <button type="submit" class="btn buscar">Continuar</button>
                 </div>
             </form>
         </div>

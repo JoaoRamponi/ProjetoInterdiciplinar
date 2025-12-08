@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Passageiro</title>
+    <title>Login Funcionário</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,51 +13,38 @@
     <div class="titulo-faixa">
         ACESSO LOGIN FUNCIONÁRIO
     </div>
-    <form>
+    <form action="phps/cadastro_funcionario.php" method="POST">
 
         <div class="linha">
             <label>Nome completo:</label>
-            <input type="text">
+            <input type="text" name="nome_funcionario">
         </div>
 
         <div class="linha-dupla">
-            <div>
-                <label>CPF:</label>
-                <input type="text">
-            </div>
             <div>
                 <label>RG:</label>
-                <input type="text">
-            </div>
-        </div>
+                <input type="text" name="rg_funcionario">
 
-        <div class="linha-dupla">
-            <div>
                 <label>Data nascimento:</label>
-                <input type="text" class="campo-data">
+                <input type="text" name="dataNasci_funcionario">
             </div>
-        </div>
-
-        <div class="linha">
-            <label>Endereço/rua/número:</label>
-            <input type="text">
         </div>
 
         <div class="linha-dupla">
             <div>
                 <label>Cidade/bairro:</label>
-                <input type="text">
+                <input type="text" name="cidade_funcionario">
             </div>
         </div>
 
         <div class="linha-dupla">
             <div>
                 <label>Telefone:</label>
-                <input type="text">
+                <input type="text" name="telefone_funcionario">
             </div>
             <div>
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" name="email_funcionario">
             </div>
         </div>
 
